@@ -1,5 +1,6 @@
 HELP.md
-target/
+# Remove exclusion for target folder
+# target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
