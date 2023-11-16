@@ -36,7 +36,7 @@ jobs:
       with:
         image: thirumaleshd7013/springboot-images
         tags: v1, latest
-        registry: registry-url.io
+        registry: docker.io
         dockerfile: Dockerfile
       env:
         username: ${{ secrets.DOCKER_USERNAME }}
