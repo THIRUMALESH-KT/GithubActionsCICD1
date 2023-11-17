@@ -47,7 +47,7 @@ jobs:
    runs-on: [springbootinstance1]
    steps:
      - name: pull image from docker hub
-       run: docker pull thirumaleshd7013/springboot-images:latest
+       run: docker pull thirumaleshd7013/springboot-images
      - name: delete old container
        run: docker rm -f GithubActionCICD1-container
      - name: run docker container
