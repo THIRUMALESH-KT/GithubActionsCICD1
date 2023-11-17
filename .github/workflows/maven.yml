@@ -40,3 +40,16 @@ jobs:
         dockerfile: demo2/Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
+        
+        
+  depoly:
+   needs: build
+   runs-on: [springbootinstance1]
+   steps:
+     - name: pull image from docker hub
+       run: docker pull thirumaleshd7013/springboot-images:latest
+     - name: delete old container
+       run: docker rm -f GithubActionCICD1-container
+     - name: run docker container
+       run: docker run -d -p 8080:8080 --name GithubActionCICD1-container thirumaleshd7013/springboot-images
+   
