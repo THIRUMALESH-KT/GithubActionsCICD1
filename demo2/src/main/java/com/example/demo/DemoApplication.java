@@ -12,7 +12,7 @@ public class DemoApplication {
 
 	@GetMapping("/welcome")
 	public ResponseEntity<Object> welcome(){
-		return ResponseEntity.ok("welcome Nandu");
+		return ResponseEntity.ok("welcome Venkat and Chandu");
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
