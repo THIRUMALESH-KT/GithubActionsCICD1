@@ -43,7 +43,7 @@ jobs:
           sudo apt-get -y install docker.io
 
       - name: delete old container
-        run: docker rm -f GithubActionCICD1-container
+        run: sudo docker rm -f GithubActionCICD1-container
 
       - name: run Docker container
         run: docker run -d -p 8080:8080 --name GithubActionCICD1-container thirumaleshd7013/springboot-images:latest
