@@ -52,5 +52,5 @@ jobs:
 
      
       - name: run Docker container
-        run: sudo docker run -d -p 8080:8080 --name GithubActionCICD1-container thirumaleshd7013/springboot-images:${{ github.sha }}
+        run: sudo docker run -d -p 8082:8080 --name GithubActionCICD1-container thirumaleshd7013/springboot-images:${{ github.sha }}
 
