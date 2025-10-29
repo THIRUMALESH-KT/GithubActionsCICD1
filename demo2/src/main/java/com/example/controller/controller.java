@@ -27,6 +27,7 @@ public class controller {
 		map.put("message ", "sucess");
 		map.put("result " , "welcome to welcome page");
 		map.put("status ", HttpStatus.OK);
+		//
 		return ResponseEntity.ok(map);
 	}
 	
